@@ -1,23 +1,26 @@
-import React from 'react';
+
+import '../index.css';
 
 const Header = () => {
   return (
-    <header className="bg-white shadow">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center flex-row">
-        {/* Logo */}
-        <div className="flex items-center space-x-4">
-          <img src="src\assets\logo.svg" alt="Logo" className="h-10 w-10 ml-5" />
-          {/* Contact Us Button */}
-          <div className="bg-white rounded-full 	">
-  Contact Us
-</div>
-         
-        </div>
+    <header className="bg-white shadow flex flex-row">
+    
         
-        
+        <div className="basis-1/4 items-center space-x-4">
+          <img src="src\assets\logo.svg" alt="Logo" className="h-10 w-10 ml-5" /> 
       </div>
+
+      <div className='basis-1/2'></div>
+      <div className='basis-1/4'>
+        
+        <button className='bg-white' >Contact Us</button>
+        
+         </div>
+      
+        
+      
     </header>
-  );
+  )
 };
 
 export default Header;
